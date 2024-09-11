@@ -1,8 +1,7 @@
 import $ from 'jquery';
-// function checkAffClick() {
-//     checkCookie("aff") || (window.open("https://s.lazada.vn/s.4aV27?cc", "_blank"),
-//     setCookie("aff", !0, .5))
-// }
+function checkAffClick() {
+    checkCookie("aff") || (setCookie("aff", !0, .5))
+}
 function setCookie(n, t, i) {
     const r = new Date;
     r.setTime(r.getTime() + i * 864e5);
@@ -13639,6 +13638,6 @@ function(n) {
 });
 $(document).ready(function() {
     $(".company-link, .bread-home, .link-rate, .rv-count, .all-rv, .btn-create-review, .paging-link, .home-logo").on("click", function() {
-        // checkAffClick()
+         checkAffClick()
     })
 })
